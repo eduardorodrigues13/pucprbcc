@@ -9,6 +9,3 @@ elif mediaProva >= 4 and porcentagemFreq >= 75:
     print("Você está em recuperação.")
 else:
     print("Você está reprovado.")
-
-
-
