@@ -8,3 +8,4 @@ while num != -1:
     if num == -1:
         media = total / (contagem)
         print("A média dos números digitados é: ", media)
+print("Valor de saída: -1. Encerrando...")

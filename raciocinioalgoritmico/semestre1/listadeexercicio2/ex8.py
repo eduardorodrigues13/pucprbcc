@@ -1,16 +1,16 @@
-# Ler o número de minutos utilizados no estacionamento
-minutos = int(input("Digite o número de minutos utilizados no estacionamento: "))
+minutos = int(input("Digite a quantidade de minutos: "))
+custo = 8.00
+tempo_min = 60
 
-# Calcular o custo total
-if minutos <= 60:
-    custo = 8.00
-else:
-    minutos_extras = minutos - 60
-    horas_extras = minutos_extras // 15
-    custo = 8.00 + (horas_extras * 1.50)
+if minutos > tempo_min:
+    tempo_extra = minutos - tempo_min
+    fracao = tempo_extra // 15
 
-# Exibir o resultado
-if custo == 8.00:
-    print("Valor mínimo, R$ 8,00")
+    if tempo_extra % 15 != 0:
+        fracao += 1
+
+    custo += fracao * 1.50
+    print(f"O custo fracionado é de R${custo:.2f}")
 else:
-    print("Valor fracionado, R$", custo)
+    print(f"O custo é de R${custo:.2f}")
+    
