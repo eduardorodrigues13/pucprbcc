@@ -1,5 +1,5 @@
 num = 1
-while num < 100:
+while num < n:
     print(num)
     num += 2
     
