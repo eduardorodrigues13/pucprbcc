@@ -6,5 +6,5 @@ while numero <= 10:
         resultado = numero * multiplicador 
         print(f"{numero} x {multiplicador} = {resultado}")
         multiplicador += 1
-    print()  # Add an empty line after each table
+    print()
     numero += 1
